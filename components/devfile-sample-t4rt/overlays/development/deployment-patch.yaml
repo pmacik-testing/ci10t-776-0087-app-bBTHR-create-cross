@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-t4rt
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-776-0087-tenant/ci10t-776-0087-app/devfile-sample-t4rt@sha256:cc3c4dff14192985056625f22071da3014c170a2643738bb8d5cc642bdf373ed
+        name: my-nodejs
+        resources: {}
+status: {}
